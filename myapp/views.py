@@ -13,3 +13,9 @@ def fact(request,n):
     n=int(n)
     return HttpResponse("<h4>factorial of {} is {}</h4>".format(n,factorial(n)))
 
+def base(request):
+    return render(request,"myapp/base.html")
+
+def child(request):
+    return render(request,"child.html")
+
